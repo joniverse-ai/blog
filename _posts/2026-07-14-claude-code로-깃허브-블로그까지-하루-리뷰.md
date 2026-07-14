@@ -1,6 +1,6 @@
 ---
 title: "Claude Code로 Git 세팅부터 블로그 배포까지 — 하루 리뷰"
-date: 2026-07-14 20:00:00 +0900
+date: 2026-07-14 16:00:00 +0900
 categories: [일지, 리뷰]
 tags: [ai-agent, claude-code, git, github-pages, 회고]
 ---
