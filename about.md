@@ -1,7 +1,10 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
-order: 4
+layout: about
+title: About
+description: >
+  18년 차 브랜드 디자이너 johnny의 소개.
+menu: true
+order: 1
 ---
 
 18년 차 브랜드 디자이너 johnny입니다.
