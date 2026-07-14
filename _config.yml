@@ -24,8 +24,6 @@ author:
   email:               joniverse.j9@gmail.com
 
 menu:
-  - title:             Blog
-    url:               /blog/
   - title:             About
     url:               /about/
 
