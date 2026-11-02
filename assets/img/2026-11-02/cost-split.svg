@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-label="메시지 하나가 AI를 다섯 번 부른다. 요금 비중은 도구 고르기 30%, 답 만들기 21%, 배경 효과 18%, 소품 효과 17%, 기억 정리 15%. 화면 효과 두 개를 합치면 35%로, 사용자가 읽는 답보다 많다">
+  <rect width="960" height="300" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">메시지 하나 = AI 호출 5번, 요금은 어디로?</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">staging 8건 · 메시지 1건 평균 $0.00059 · 교안 예상은 "호출 3번"</text>
+
+    <!-- 막대: x0=32, 전체 896px -->
+    <rect x="32" y="100" width="269" height="64" rx="8" fill="#14213D"/>
+    <rect x="301" y="100" width="188" height="64" fill="#2F5BD3"/>
+    <rect x="489" y="100" width="161" height="64" fill="#D9622B"/>
+    <rect x="650" y="100" width="152" height="64" fill="#E8875A"/>
+    <rect x="802" y="100" width="126" height="64" rx="8" fill="#8A93A3"/>
+    <g font-size="14" fill="#FFFFFF" font-weight="700" text-anchor="middle">
+      <text x="166" y="128">도구 고르기</text><text x="166" y="150" font-size="16">30%</text>
+      <text x="395" y="128">답 만들기</text><text x="395" y="150" font-size="16">21%</text>
+      <text x="569" y="128">배경 효과</text><text x="569" y="150" font-size="16">18%</text>
+      <text x="726" y="128">소품 효과</text><text x="726" y="150" font-size="16">17%</text>
+      <text x="865" y="128">기억 정리</text><text x="865" y="150" font-size="16">15%</text>
+    </g>
+
+    <path d="M489 176H802" stroke="#D9622B" stroke-width="3"/>
+    <path d="M489 170V182M802 170V182" stroke="#D9622B" stroke-width="3"/>
+    <text x="645" y="206" font-size="15" font-weight="700" fill="#D9622B" text-anchor="middle">화면 효과 = 35%</text>
+    <text x="645" y="228" font-size="13" fill="#4A5568" text-anchor="middle">지난주에 붙인 장식이 답보다 돈을 더 쓴다</text>
+
+    <path d="M301 176H489" stroke="#2F5BD3" stroke-width="3"/>
+    <text x="395" y="206" font-size="13" fill="#2F5BD3" text-anchor="middle">사용자가 읽는 건 이것뿐</text>
+
+    <text x="32" y="272" font-size="13" fill="#6A7280">가장 비싼 트레이스($0.000709)는 같은 약속 4개짜리 목록이 답 입력을 키운 경우였다</text>
+  </g>
+</svg>

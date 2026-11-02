@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" role="img" aria-label="'내일 부산 미세먼지 어때?' 한 메시지의 트레이스. 전체 5.58초. 처음 1.18초는 데이터 읽기, 도구 고르기 1.48초, 미세먼지 도구 0.53초와 날씨 도구 0.53초를 차례로, 답 만들기는 3.72초에 시작해 4.16초에 첫 글자, 4.52초에 끝. 그 뒤 소품 효과, 기억 정리, 요약은 사용자가 기다리지 않는 시간">
+  <rect width="960" height="470" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">"내일 부산 미세먼지 어때?" 한 메시지를 열어 보면</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">staging 트레이스 · 전체 5.58초 · 막대 = 단계가 걸린 시간</text>
+
+    <!-- 축: x0=230, 1초=118px -->
+    <g font-size="12" fill="#6A7280" text-anchor="middle">
+      <text x="230" y="100">0초</text><text x="348" y="100">1</text><text x="466" y="100">2</text><text x="584" y="100">3</text><text x="702" y="100">4</text><text x="820" y="100">5</text>
+    </g>
+    <g stroke="#DDE1D8" stroke-width="1">
+      <path d="M230 108V418M348 108V418M466 108V418M584 108V418M702 108V418M820 108V418"/>
+    </g>
+
+    <!-- 사용자가 기다리지 않는 구간 -->
+    <rect x="763" y="108" width="125" height="310" fill="#E6ECF7" opacity="0.8"/>
+    <text x="868" y="457" font-size="12" fill="#2F5BD3" text-anchor="middle">답 다 나온 뒤 · 안 기다림</text>
+
+    <g font-size="13" fill="#14213D">
+      <text x="32" y="130">chat-turn (전체)</text>
+      <text x="32" y="160">데이터 읽기 (기록 안 됨)</text>
+      <text x="32" y="190">choose-tools</text>
+      <text x="32" y="220">effect-scene</text>
+      <text x="32" y="250">tool:미세먼지</text>
+      <text x="32" y="280">tool:날씨</text>
+      <text x="32" y="310">reply</text>
+      <text x="32" y="340">effect-prop</text>
+      <text x="32" y="370">memory-update</text>
+      <text x="32" y="400">memory-summary</text>
+    </g>
+    <rect x="230" y="118" width="658" height="16" rx="4" fill="#14213D"/>
+    <rect x="230" y="148" width="139" height="16" rx="4" fill="#C9CEC3" stroke="#6A7280" stroke-dasharray="4 3"/>
+    <rect x="369" y="178" width="175" height="16" rx="4" fill="#D9622B"/><text x="552" y="191" font-size="12" fill="#D9622B" font-weight="700">1.48초 · 가장 긴 단계</text>
+    <rect x="369" y="208" width="78" height="16" rx="4" fill="#8A93A3"/>
+    <rect x="544" y="238" width="62" height="16" rx="4" fill="#1F7A5C"/>
+    <rect x="606" y="268" width="63" height="16" rx="4" fill="#1F7A5C"/><text x="596" y="281" font-size="12" fill="#1F7A5C" text-anchor="end">미세먼지 끝나고 차례로 →</text>
+    <rect x="669" y="298" width="94" height="16" rx="4" fill="#2F5BD3"/>
+    <rect x="780" y="328" width="81" height="16" rx="4" fill="#8A93A3"/>
+    <rect x="781" y="358" width="72" height="16" rx="4" fill="#8A93A3"/>
+    <rect x="853" y="388" width="35" height="16" rx="4" fill="#8A93A3"/>
+
+    <!-- 첫 글자 -->
+    <path d="M721 112V418" stroke="#D9622B" stroke-width="2" stroke-dasharray="5 4"/>
+    <rect x="652" y="440" width="138" height="24" rx="12" fill="#D9622B"/>
+    <text x="721" y="457" font-size="12" fill="#FFFFFF" text-anchor="middle" font-weight="700">첫 글자 4.16초</text>
+  </g>
+</svg>

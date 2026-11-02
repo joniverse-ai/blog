@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="트레이스에서 찾은 엇갈림 세 가지. 첫째, 약속 저장 도구는 성공했는데 답은 기억할 수 없다고 했다. 둘째, 공휴일 도구는 11월에 없다고 했는데 답은 다음 달에 있다고 지어냈다. 셋째, 다음 주 토요일 이사를 도구 고르기는 11월 11일 수요일로, 기억 정리는 11월 14일 토요일로 적었다. 모두 서버는 200 OK였다">
+  <rect width="960" height="420" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">200 OK 뒤에 숨어 있던 엇갈림</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">단계별 입력·출력을 나란히 놓아야만 보인다</text>
+
+    <g font-size="13">
+      <text x="240" y="104" fill="#1F7A5C" font-weight="700" text-anchor="middle">단계가 실제로 한 일</text>
+      <text x="720" y="104" fill="#D9622B" font-weight="700" text-anchor="middle">사용자가 받은 말</text>
+    </g>
+
+    <!-- 1 -->
+    <rect x="32" y="118" width="416" height="70" rx="12" fill="#FFFFFF" stroke="#1F7A5C" stroke-width="2"/>
+    <text x="52" y="146" font-size="14" fill="#14213D" font-weight="700">tool:create_reminder ✅ ok</text>
+    <text x="52" y="170" font-size="13" fill="#4A5568">"약속을 저장했습니다: 11월 3일 …"</text>
+    <rect x="512" y="118" width="416" height="70" rx="12" fill="#FFFFFF" stroke="#D9622B" stroke-width="2"/>
+    <text x="532" y="146" font-size="14" fill="#14213D" font-weight="700">reply</text>
+    <text x="532" y="170" font-size="13" fill="#4A5568">"미안, 그 내용은 기억할 수 없어"</text>
+    <text x="480" y="160" font-size="22" fill="#D9622B" text-anchor="middle">≠</text>
+
+    <!-- 2 -->
+    <rect x="32" y="206" width="416" height="70" rx="12" fill="#FFFFFF" stroke="#1F7A5C" stroke-width="2"/>
+    <text x="52" y="234" font-size="14" fill="#14213D" font-weight="700">tool:get_holidays (11/2~11/30)</text>
+    <text x="52" y="258" font-size="13" fill="#4A5568">"공휴일이 없습니다"</text>
+    <rect x="512" y="206" width="416" height="70" rx="12" fill="#FFFFFF" stroke="#D9622B" stroke-width="2"/>
+    <text x="532" y="234" font-size="14" fill="#14213D" font-weight="700">reply 👎</text>
+    <text x="532" y="258" font-size="13" fill="#4A5568">"다음 공휴일은 다음 달에 있어" ← 지어냄</text>
+    <text x="480" y="248" font-size="22" fill="#D9622B" text-anchor="middle">≠</text>
+
+    <!-- 3 -->
+    <rect x="32" y="294" width="416" height="70" rx="12" fill="#FFFFFF" stroke="#1F7A5C" stroke-width="2"/>
+    <text x="52" y="322" font-size="14" fill="#14213D" font-weight="700">memory-update</text>
+    <text x="52" y="346" font-size="13" fill="#4A5568">"11월 14일(토) 이사" ✓ 맞음</text>
+    <rect x="512" y="294" width="416" height="70" rx="12" fill="#FFFFFF" stroke="#D9622B" stroke-width="2"/>
+    <text x="532" y="322" font-size="14" fill="#14213D" font-weight="700">choose-tools → 알림 저장</text>
+    <text x="532" y="346" font-size="13" fill="#4A5568">부탁 안 했는데 "11월 11일(수)" 알림</text>
+    <text x="480" y="336" font-size="22" fill="#D9622B" text-anchor="middle">≠</text>
+
+    <text x="32" y="396" font-size="13" fill="#6A7280">"나 다음 주 토요일에 이사 가" 한 문장을 두고 두 단계가 서로 다른 날짜를 적었다</text>
+  </g>
+</svg>

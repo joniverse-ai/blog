@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" role="img" aria-label="사라진 트레이스의 원인. Cloud Run은 요청마다 traceparent 꼬리표를 붙이고 끝에 기록함 01 또는 기록 안 함 00을 적는다. FastAPI 0.150은 이 꼬리표를 부모로 삼았고, 00이면 Langfuse 기록이 0개였다. FastAPI의 요청 추적을 끄자 00이어도 8개가 기록됐다">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6A7280"/></marker></defs>
+  <rect width="960" height="380" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">트레이스가 통째로 사라진 이유</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">오류 로그 0줄 · 겹친 요청만 빠지는 것처럼 보였다</text>
+
+    <g font-size="14" text-anchor="middle">
+      <rect x="32" y="104" width="190" height="76" rx="12" fill="#14213D"/>
+      <text x="127" y="136" fill="#F5F6F2" font-weight="700">Cloud Run 앞단</text>
+      <text x="127" y="160" fill="#C9D3E3" font-size="12">요청마다 꼬리표를 붙임</text>
+
+      <rect x="268" y="96" width="250" height="40" rx="10" fill="#E1F5EE" stroke="#1F7A5C"/>
+      <text x="393" y="121" fill="#14213D" font-size="13">traceparent: …<tspan font-weight="700" fill="#1F7A5C">-01</tspan> 기록함</text>
+      <rect x="268" y="148" width="250" height="40" rx="10" fill="#FBE9E1" stroke="#D9622B"/>
+      <text x="393" y="173" fill="#14213D" font-size="13">traceparent: …<tspan font-weight="700" fill="#D9622B">-00</tspan> 기록 안 함</text>
+
+      <rect x="564" y="104" width="170" height="76" rx="12" fill="#FFFFFF" stroke="#2F5BD3" stroke-width="2"/>
+      <text x="649" y="136" fill="#14213D" font-weight="700">FastAPI 0.150</text>
+      <text x="649" y="160" fill="#2F5BD3" font-size="12">꼬리표를 부모로 삼음</text>
+
+      <rect x="780" y="96" width="148" height="40" rx="10" fill="#1F7A5C"/>
+      <text x="854" y="121" fill="#FFFFFF" font-size="13" font-weight="700">Langfuse 8개</text>
+      <rect x="780" y="148" width="148" height="40" rx="10" fill="#D9622B"/>
+      <text x="854" y="173" fill="#FFFFFF" font-size="13" font-weight="700">Langfuse 0개</text>
+    </g>
+    <g stroke="#6A7280" stroke-width="2" fill="none" marker-end="url(#a)">
+      <path d="M224 132H264"/><path d="M520 142H560"/><path d="M736 120H776"/><path d="M736 166H776"/>
+    </g>
+
+    <rect x="32" y="222" width="896" height="112" rx="12" fill="#FFFFFF" stroke="#C9D3E3"/>
+    <text x="56" y="254" font-size="15" font-weight="700" fill="#14213D">고친 한 줄</text>
+    <text x="56" y="284" font-size="14" fill="#2F5BD3" font-family="Menlo,monospace">app = FastAPI(title="…", telemetry={"tracing": False})</text>
+    <text x="56" y="314" font-size="13" fill="#4A5568">그 뒤로 -00 요청도, 동시에 겹친 요청도 모두 기록됐다. 범인은 버전을 열어 둔 <tspan font-family="Menlo,monospace">fastapi&gt;=0.115</tspan> 였다</text>
+  </g>
+</svg>
