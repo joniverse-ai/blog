@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-label="production 배포 동안 보낸 요청 1,467건 중 이전 버전이 888건, 새 버전이 579건 응답했고 실패는 0건이었다. 롤백 버튼은 71초 걸렸고 그중 40초는 승인 대기, 11초는 리비전 찾기, 20초는 트래픽 이동이었다">
+  <rect width="960" height="300" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">production 배포 중 요청 1,467건 · 실패 0</text>
+    <rect x="32" y="64" width="551" height="48" fill="#8FA9D9"/>
+    <rect x="583" y="64" width="345" height="48" fill="#1F7A5C"/>
+    <text x="48" y="94" font-size="16" font-weight="700" fill="#14213D">이전 버전 888건</text>
+    <text x="599" y="94" font-size="16" font-weight="700" fill="#F5F6F2">새 버전 579건</text>
+    <text x="32" y="136" font-size="13" fill="#6A7280">승인 대기 · 0% 배포 · 스모크 테스트 동안 사용자는 아무것도 모름</text>
+    <text x="583" y="136" font-size="13" fill="#6A7280">전환 버튼 없이 저절로 바뀜</text>
+
+    <text x="32" y="196" font-size="20" font-weight="700" fill="#14213D">롤백 버튼 · 71초 · 실패 0</text>
+    <rect x="32" y="216" width="508" height="48" fill="#C9D3E3"/>
+    <rect x="540" y="216" width="140" height="48" fill="#8FA9D9"/>
+    <rect x="680" y="216" width="248" height="48" fill="#2F5BD3"/>
+    <text x="48" y="246" font-size="16" font-weight="700" fill="#14213D">승인 대기 40초</text>
+    <text x="552" y="246" font-size="15" font-weight="700" fill="#14213D">찾기 11초</text>
+    <text x="696" y="246" font-size="16" font-weight="700" fill="#F5F6F2">트래픽 이동 20초</text>
+    <text x="32" y="286" font-size="13" fill="#6A7280">이미지를 다시 만들지 않고, 남겨 둔 이전 리비전으로 트래픽만 옮긴다 (다시 돌아갈 땐 3초)</text>
+  </g>
+</svg>

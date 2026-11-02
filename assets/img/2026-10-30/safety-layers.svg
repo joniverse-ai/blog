@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-label="망가진 버전을 막는 세 겹: 1겹 CI 테스트는 머지 전에, 2겹 /health 스타트업 프로브는 배포 중에, 3겹 태그 URL 스모크 테스트는 전환 전에 막는다. 실험에서는 2겹에서 걸렸고 사용자 실패는 0건이었다">
+  <rect width="960" height="300" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">일부러 망가뜨린 버전은 어디서 걸렸을까</text>
+    <g font-size="15">
+      <rect x="32" y="70" width="280" height="150" rx="14" fill="#FFFFFF" stroke="#C9D3E3" stroke-width="2"/>
+      <text x="52" y="102" font-size="13" font-weight="700" fill="#2F5BD3">1겹 · 머지 전</text>
+      <text x="52" y="132" font-size="19" font-weight="700" fill="#14213D">CI 테스트</text>
+      <text x="52" y="166" fill="#4A5568">/health 를 그냥 망가뜨리면</text>
+      <text x="52" y="188" fill="#4A5568">테스트가 먼저 잡는다</text>
+
+      <rect x="340" y="70" width="280" height="150" rx="14" fill="#FBE9DF" stroke="#D9622B" stroke-width="3"/>
+      <text x="360" y="102" font-size="13" font-weight="700" fill="#B04A1A">2겹 · 배포 중 · 여기서 걸림</text>
+      <text x="360" y="132" font-size="19" font-weight="700" fill="#14213D">/health 프로브</text>
+      <text x="360" y="166" fill="#4A5568">서버에서만 깨지는 버전 →</text>
+      <text x="360" y="188" fill="#4A5568">새 리비전이 준비 실패</text>
+
+      <rect x="648" y="70" width="280" height="150" rx="14" fill="#FFFFFF" stroke="#C9D3E3" stroke-width="2"/>
+      <text x="668" y="102" font-size="13" font-weight="700" fill="#2F5BD3">3겹 · 전환 전</text>
+      <text x="668" y="132" font-size="19" font-weight="700" fill="#14213D">스모크 테스트</text>
+      <text x="668" y="166" fill="#4A5568">커밋이 다르거나 이상하면</text>
+      <text x="668" y="188" fill="#4A5568">여기서 멈춘다</text>
+    </g>
+    <rect x="32" y="240" width="896" height="44" rx="10" fill="#1F7A5C"/>
+    <text x="52" y="268" font-size="16" font-weight="700" fill="#F5F6F2">그동안 사용자 요청 730건 · 실패 0 · 계속 이전 버전</text>
+  </g>
+</svg>

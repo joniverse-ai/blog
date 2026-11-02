@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" role="img" aria-label="배포 중 사용자 요청 실패 수: 기본 배포 4건, 준비 30초 늦는 버전과 포트 프로브 34건, 같은 버전과 /health 프로브 0건">
+  <rect width="960" height="330" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">배포하는 동안 실패한 요청 수 (staging, 0.2초마다 요청)</text>
+    <text x="32" y="70" font-size="14" fill="#6A7280">세 번 모두 배포 명령은 "Done" 으로 끝났다</text>
+    <g font-size="16">
+      <text x="32" y="128" font-weight="600" fill="#14213D">기본 배포</text>
+      <rect x="330" y="106" width="56" height="34" rx="4" fill="#8FA9D9"/>
+      <text x="398" y="129" fill="#4A5568">4건 · 콜드 스타트로 느림</text>
+
+      <text x="32" y="188" font-weight="600" fill="#14213D">30초 늦는 버전 + 포트 프로브</text>
+      <rect x="330" y="166" width="476" height="34" rx="4" fill="#D9622B"/>
+      <text x="818" y="189" font-weight="700" fill="#B04A1A">34건 (503)</text>
+
+      <text x="32" y="248" font-weight="600" fill="#14213D">같은 버전 + /health 프로브</text>
+      <rect x="330" y="226" width="6" height="34" rx="3" fill="#1F7A5C"/>
+      <text x="348" y="249" font-weight="700" fill="#1F7A5C">0건 · 대신 배포가 66초로 늘어남</text>
+    </g>
+    <text x="32" y="300" font-size="14" fill="#6A7280">포트만 보면 앱이 "준비 중"이어도 트래픽이 넘어간다 → 준비 조건은 내가 정해야 한다</text>
+  </g>
+</svg>
