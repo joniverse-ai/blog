@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 350" role="img" aria-label="내 서비스 공격해 보기 결과. 잔액 1에서 동시 요청 10개는 1개만 통과하고 9개는 402로 거절되어 막혔다. 게스트를 새로 만들면 처음엔 4명 모두 30크레딧을 받아 뚫렸고, 같은 IP에서 하루 3명까지로 고친 뒤 4번째는 0">
+  <rect width="960" height="350" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">내 서비스 공격해 보기</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">가짜 LLM · 내 컴퓨터 서버에서만 · 토스페이먼츠에는 대량 요청 안 함</text>
+
+    <text x="32" y="112" font-size="15" font-weight="700" fill="#14213D">① 잔액 1에서 메시지 10개를 동시에</text>
+    <text x="928" y="112" font-size="14" font-weight="700" fill="#2F5BD3" text-anchor="end">막힘 · 메모리와 Supabase 모두</text>
+    <g font-size="12" font-weight="700" text-anchor="middle">
+      <circle cx="56" cy="146" r="20" fill="#14213D"/><text x="56" y="150" fill="#FFFFFF">200</text>
+      <g fill="#DDE0E6">
+        <circle cx="106" cy="146" r="20"/><circle cx="156" cy="146" r="20"/><circle cx="206" cy="146" r="20"/>
+        <circle cx="256" cy="146" r="20"/><circle cx="306" cy="146" r="20"/><circle cx="356" cy="146" r="20"/>
+        <circle cx="406" cy="146" r="20"/><circle cx="456" cy="146" r="20"/><circle cx="506" cy="146" r="20"/>
+      </g>
+      <g fill="#6A7280">
+        <text x="106" y="150">402</text><text x="156" y="150">402</text><text x="206" y="150">402</text>
+        <text x="256" y="150">402</text><text x="306" y="150">402</text><text x="356" y="150">402</text>
+        <text x="406" y="150">402</text><text x="456" y="150">402</text><text x="506" y="150">402</text>
+      </g>
+    </g>
+    <text x="548" y="142" font-size="13" fill="#14213D">1개 통과, 9개 거절, 잔액 0 (음수 없음)</text>
+    <text x="548" y="162" font-size="12" fill="#6A7280">받자마자 차감 + 사용자별 잠금을 건 DB 함수</text>
+
+    <path d="M32 194H928" stroke="#DDE0E6" stroke-width="2"/>
+
+    <text x="32" y="228" font-size="15" font-weight="700" fill="#14213D">② 시크릿 창으로 게스트를 새로 만들기</text>
+    <g font-size="13" fill="#6A7280">
+      <text x="32" y="270">고치기 전</text>
+      <text x="32" y="310">IP당 하루 3명</text>
+    </g>
+    <g font-size="12" font-weight="700" text-anchor="middle" fill="#FFFFFF">
+      <circle cx="176" cy="265" r="20" fill="#D9622B"/><text x="176" y="269">+30</text>
+      <circle cx="226" cy="265" r="20" fill="#D9622B"/><text x="226" y="269">+30</text>
+      <circle cx="276" cy="265" r="20" fill="#D9622B"/><text x="276" y="269">+30</text>
+      <circle cx="326" cy="265" r="20" fill="#D9622B"/><text x="326" y="269">+30</text>
+      <circle cx="176" cy="305" r="20" fill="#8A93A3"/><text x="176" y="309">+30</text>
+      <circle cx="226" cy="305" r="20" fill="#8A93A3"/><text x="226" y="309">+30</text>
+      <circle cx="276" cy="305" r="20" fill="#8A93A3"/><text x="276" y="309">+30</text>
+      <circle cx="326" cy="305" r="20" fill="#2F5BD3"/><text x="326" y="309">0</text>
+    </g>
+    <text x="370" y="270" font-size="13" font-weight="700" fill="#D9622B">뚫림 · 창을 열 때마다 새 게스트 = 처음 온 사람</text>
+    <text x="370" y="310" font-size="13" font-weight="700" fill="#2F5BD3">고침 · 4번째부터 0 (IP는 해시로만 저장)</text>
+  </g>
+</svg>

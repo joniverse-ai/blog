@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-label="메시지 한 건 원가는 평균 약 0.97원. 한 달 원가는 하루 20개 쓰는 사용자 약 580원, 300개 약 9,100원, 3,000개 보내는 악용 계정 약 91,000원">
+  <rect width="960" height="300" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">메시지 한 건은 약 1원, 한 달 비용은 사용량이 정한다</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">gpt-4o-mini · Langfuse 트레이스 40개 · 평균 0.97원 / p90 1.17원 / 최대 1.36원 · 1,450원/$ 가정</text>
+
+    <g font-size="14" fill="#14213D" font-weight="700">
+      <text x="32" y="128">보통</text>
+      <text x="32" y="188">많이</text>
+      <text x="32" y="248">악용</text>
+    </g>
+    <g font-size="12" fill="#6A7280">
+      <text x="32" y="146">하루 20개</text>
+      <text x="32" y="206">하루 300개</text>
+      <text x="32" y="266">하루 3,000개</text>
+    </g>
+
+    <rect x="150" y="114" width="4" height="30" rx="2" fill="#2F5BD3"/>
+    <rect x="150" y="174" width="57" height="30" rx="4" fill="#2F5BD3"/>
+    <rect x="150" y="234" width="570" height="30" rx="4" fill="#D9622B"/>
+
+    <g font-size="15" font-weight="700" fill="#14213D">
+      <text x="166" y="135">월 약 580원</text>
+      <text x="219" y="195">월 약 9,100원 (보통의 15배)</text>
+      <text x="734" y="255">월 약 91,000원</text>
+    </g>
+    <text x="606" y="128" font-size="13" fill="#6A7280">사용자 수가 아니라 사용량에 비례</text>
+    <text x="606" y="148" font-size="13" fill="#6A7280">10턴이 넘어도 원가는 거의 그대로</text>
+    <text x="606" y="168" font-size="13" fill="#6A7280">(최근 10턴만 보내서 입력이 멈춤)</text>
+  </g>
+</svg>

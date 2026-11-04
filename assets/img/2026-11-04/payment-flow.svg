@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 290" role="img" aria-label="결제 흐름 다섯 단계. 1 서버가 상품표 금액으로 주문을 먼저 저장. 2 토스페이먼츠 결제위젯으로 카드 인증. 3 성공 주소로 paymentKey, orderId, amount가 돌아옴. 4 서버가 주소의 금액을 저장한 금액과 비교하고 내 주문인지, 대기인지 확인. 5 시크릿 키로 승인한 뒤에만 주문 완료와 원장에 크레딧 추가">
+  <rect width="960" height="290" rx="16" fill="#F5F6F2"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8A93A3"/></marker>
+  </defs>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">결제는 서버가 승인해야 끝난다</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">토스페이먼츠 결제위젯 v2 · 문서용 테스트 키라 실제 돈은 빠지지 않음</text>
+
+    <g stroke="#8A93A3" stroke-width="2" marker-end="url(#a)">
+      <path d="M194 165H208"/><path d="M380 165H394"/><path d="M566 165H580"/><path d="M752 165H766"/>
+    </g>
+
+    <g>
+      <rect x="24" y="100" width="168" height="130" rx="12" fill="#FFFFFF" stroke="#DDE0E6" stroke-width="2"/>
+      <rect x="210" y="100" width="168" height="130" rx="12" fill="#FFFFFF" stroke="#DDE0E6" stroke-width="2"/>
+      <rect x="396" y="100" width="168" height="130" rx="12" fill="#FFFFFF" stroke="#DDE0E6" stroke-width="2"/>
+      <rect x="582" y="100" width="168" height="130" rx="12" fill="#FFF1E8" stroke="#D9622B" stroke-width="2"/>
+      <rect x="768" y="100" width="168" height="130" rx="12" fill="#EAF0FC" stroke="#2F5BD3" stroke-width="2"/>
+    </g>
+
+    <g font-size="12" font-weight="700" fill="#6A7280">
+      <text x="40" y="124">① 서버</text><text x="226" y="124">② 브라우저 · 토스</text><text x="412" y="124">③ 브라우저</text>
+      <text x="598" y="124" fill="#D9622B">④ 서버</text><text x="784" y="124" fill="#2F5BD3">⑤ 서버 → 토스</text>
+    </g>
+    <g font-size="15" font-weight="700" fill="#14213D">
+      <text x="40" y="150">주문 먼저 저장</text>
+      <text x="226" y="150">카드 인증</text>
+      <text x="412" y="150">성공 주소로 이동</text>
+      <text x="598" y="150">금액 · 주인 · 상태</text>
+      <text x="784" y="150">시크릿 키로 승인</text>
+    </g>
+    <g font-size="12" fill="#6A7280">
+      <text x="40" y="174">상품 ID만 받고</text><text x="40" y="192">금액은 상품표에서</text><text x="40" y="210">상태: 대기</text>
+      <text x="226" y="174">결제위젯이 카드 화면</text><text x="226" y="192">우리 서버는 카드</text><text x="226" y="210">번호를 못 봄</text>
+      <text x="412" y="174">paymentKey · orderId</text><text x="412" y="192">amount 가 주소에</text><text x="412" y="210">아직 돈은 안 빠짐</text>
+      <text x="598" y="174">주소의 금액을 믿지</text><text x="598" y="192">않고 저장값과 비교</text><text x="598" y="210">남의 주문이면 404</text>
+      <text x="784" y="174">성공해야 돈이 빠짐</text><text x="784" y="192">→ 주문 완료</text><text x="784" y="210">→ 원장 order: +크레딧</text>
+    </g>
+    <text x="598" y="260" font-size="13" font-weight="700" fill="#D9622B">주소창의 amount=1000 은 100 으로 고칠 수 있다</text>
+  </g>
+</svg>

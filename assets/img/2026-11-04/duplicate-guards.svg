@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-label="같은 결제가 두 번 오는 것을 막는 세 겹 장치. 주문 상태 확인, 원장 참조 유일, 토스페이먼츠 멱등키. 성공 페이지를 네 번 열었지만 승인 API는 한 번, 원장 플러스 줄은 한 개">
+  <rect width="960" height="300" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">같은 요청은 반드시 두 번 온다 — 세 겹으로 막기</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">새로고침 · 버튼 두 번 · 네트워크 재시도</text>
+
+    <g>
+      <rect x="32" y="92" width="600" height="56" rx="10" fill="#FFFFFF" stroke="#DDE0E6" stroke-width="2"/>
+      <rect x="32" y="160" width="600" height="56" rx="10" fill="#FFFFFF" stroke="#DDE0E6" stroke-width="2"/>
+      <rect x="32" y="228" width="600" height="56" rx="10" fill="#FFFFFF" stroke="#DDE0E6" stroke-width="2"/>
+    </g>
+    <g font-size="15" font-weight="700" fill="#14213D">
+      <text x="52" y="126">① 주문 상태</text>
+      <text x="52" y="194">② 원장 참조 유일</text>
+      <text x="52" y="262">③ Idempotency-Key</text>
+    </g>
+    <g font-size="13" fill="#6A7280">
+      <text x="224" y="126">완료된 주문이면 승인 API를 다시 부르지 않음</text>
+      <text x="224" y="194">order:주문번호 + 줄을 두 번 쌓으면 DB가 거절</text>
+      <text x="224" y="262">같은 키(= 주문 번호)면 토스가 첫 응답만 돌려줌</text>
+    </g>
+
+    <rect x="660" y="92" width="268" height="192" rx="12" fill="#EAF0FC" stroke="#2F5BD3" stroke-width="2"/>
+    <text x="680" y="122" font-size="13" font-weight="700" fill="#2F5BD3">직접 해 본 결과</text>
+    <g font-size="14" fill="#14213D">
+      <text x="680" y="156">성공 페이지 열림</text><text x="908" y="156" text-anchor="end" font-weight="700">4번</text>
+      <text x="680" y="190">승인 API 호출</text><text x="908" y="190" text-anchor="end" font-weight="700" fill="#2F5BD3">1번</text>
+      <text x="680" y="224">원장 + 줄</text><text x="908" y="224" text-anchor="end" font-weight="700" fill="#2F5BD3">1개</text>
+    </g>
+    <text x="680" y="262" font-size="12" fill="#6A7280">키를 요청마다 새로 만들면 아무것도 못 막는다</text>
+  </g>
+</svg>
