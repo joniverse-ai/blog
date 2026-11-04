@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" role="img" aria-label="LLM 심사와 사람 판정의 일치율 변화. 템플릿 지시문 그대로 75%, 지시문과 모델을 바로잡아 96%, 도구를 바꾼 뒤 75%로 떨어짐, 심사 예시를 고쳐 88%, 통과 조건 문장을 고쳐 100%. 목표선은 90%. 틀린 답 6개를 넣어 보니 6개 모두 실패로 잡았다">
+  <rect width="960" height="330" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">심사도 틀린다 — 사람 판정과 맞춘 기록</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">holiday-reply-judge(gpt-4o)와 내 판정이 같은 비율 · 목표 90% 이상, 놓친 실패 0개</text>
+
+    <!-- y = 100 + (100 - v) * 5 ; 100%→100, 90%→150, 75%→225 -->
+    <path d="M80 150H900" stroke="#2F5BD3" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <text x="900" y="142" font-size="12" fill="#2F5BD3" text-anchor="end">목표 90%</text>
+
+    <path d="M130 225L320 120L510 225L700 160L890 100" fill="none" stroke="#14213D" stroke-width="3"/>
+    <g>
+      <circle cx="130" cy="225" r="8" fill="#D9622B"/>
+      <circle cx="320" cy="120" r="8" fill="#2F5BD3"/>
+      <circle cx="510" cy="225" r="8" fill="#D9622B"/>
+      <circle cx="700" cy="160" r="8" fill="#E8875A"/>
+      <circle cx="890" cy="100" r="8" fill="#2F5BD3"/>
+    </g>
+    <g font-size="15" font-weight="700" fill="#14213D" text-anchor="middle">
+      <text x="130" y="210">75%</text>
+      <text x="320" y="105">96%</text>
+      <text x="510" y="210">75%</text>
+      <text x="700" y="188">88%</text>
+      <text x="862" y="94" text-anchor="end">100%</text>
+    </g>
+    <g font-size="12" fill="#14213D" text-anchor="middle">
+      <text x="130" y="262" font-weight="700">템플릿 지시문 그대로</text>
+      <text x="130" y="280" fill="#6A7280">실패 3개를 다 통과시킴</text>
+      <text x="320" y="262" font-weight="700">지시문·모델 바로잡음</text>
+      <text x="320" y="280" fill="#6A7280">겹친 평가 규칙도 끔</text>
+      <text x="510" y="262" font-weight="700">공휴일 도구를 바꾼 뒤</text>
+      <text x="510" y="280" fill="#6A7280">예시가 정답을 실패로 가르침</text>
+      <text x="700" y="262" font-weight="700">심사 예시 고침</text>
+      <text x="700" y="280" fill="#6A7280">남은 것: "~만"을 글자 그대로</text>
+      <text x="868" y="262" font-weight="700">통과 조건 고침</text>
+      <text x="868" y="280" fill="#6A7280">틀린 답 6/6 잡음</text>
+    </g>
+  </g>
+</svg>

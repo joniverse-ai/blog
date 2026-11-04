@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="같은 공휴일 실패라도 처음 어긋난 단계가 다르다. 도구 선택에서는 다음 공휴일 기간을 10월만 찾거나 시험 전날을 하루 더 빼서 코드로 판정한다. 도구 실행은 공휴일 목록만 돌려줘서 연휴 계산을 모델에게 맡겼다. 답 만들기에서는 금요일 크리스마스를 연휴가 아니라고 하거나 결과에 없는 날짜를 지어내서 LLM 심사로 판정한다">
+  <rect width="960" height="360" rx="16" fill="#F5F6F2"/>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#8A93A3"/>
+    </marker>
+  </defs>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">같은 '공휴일' 실패라도 고칠 곳이 다르다</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">엉뚱한 답을 "처음 어긋난 단계"로 묶기 · 어제 트레이스 + 오늘 평가</text>
+
+    <!-- 단계 머리 -->
+    <rect x="32" y="92" width="272" height="44" rx="10" fill="#14213D"/>
+    <rect x="344" y="92" width="272" height="44" rx="10" fill="#8A93A3"/>
+    <rect x="656" y="92" width="272" height="44" rx="10" fill="#D9622B"/>
+    <g font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+      <text x="168" y="120">① 도구 선택</text>
+      <text x="480" y="120">② 도구 실행</text>
+      <text x="792" y="120">③ 답 만들기</text>
+    </g>
+    <path d="M308 114H338" stroke="#8A93A3" stroke-width="2" marker-end="url(#ar)"/>
+    <path d="M620 114H650" stroke="#8A93A3" stroke-width="2" marker-end="url(#ar)"/>
+
+    <!-- 카드 -->
+    <g font-size="13" fill="#14213D">
+      <rect x="32" y="150" width="272" height="56" rx="8" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="46" y="174">"다음 공휴일 언제야?"</text>
+      <text x="46" y="194" fill="#6A7280">→ 10월만 찾음 (12/25가 빠짐)</text>
+      <rect x="32" y="214" width="272" height="56" rx="8" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="46" y="238">"금요일 시험 전날 밤"</text>
+      <text x="46" y="258" fill="#6A7280">→ 10/14로 저장 (정답 10/15)</text>
+
+      <rect x="344" y="150" width="272" height="120" rx="8" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="358" y="172">공휴일 <tspan font-weight="700">목록만</tspan> 돌려줌</text>
+      <text x="358" y="192" fill="#6A7280">"12월 25일(금) 크리스마스."</text>
+      <text x="358" y="216">주말과 이어 며칠인지,</text>
+      <text x="358" y="236">없으면 다음은 언제인지는</text>
+      <text x="358" y="256" fill="#6A7280">→ 모델이 알아서 계산</text>
+
+      <rect x="656" y="150" width="272" height="56" rx="8" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="670" y="174">금요일 크리스마스인데</text>
+      <text x="670" y="194" fill="#6A7280">→ "다른 연휴는 없네"</text>
+      <rect x="656" y="214" width="272" height="56" rx="8" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="670" y="238">"11월엔 없음"을 받고</text>
+      <text x="670" y="258" fill="#6A7280">→ "다음은 11월 15일 수능"</text>
+    </g>
+
+    <!-- 판정 -->
+    <g font-size="14" font-weight="700">
+      <text x="32" y="304" fill="#14213D">판정: 코드 채점</text>
+      <text x="344" y="304" fill="#8A93A3">오늘 코드로 고친 곳</text>
+      <text x="656" y="304" fill="#D9622B">판정: LLM 심사</text>
+    </g>
+    <g font-size="12" fill="#6A7280">
+      <text x="32" y="326">정답이 하나 (도구 이름, 날짜)</text>
+      <text x="344" y="326">연휴와 다음 공휴일을 계산해 결과에 넣기</text>
+      <text x="656" y="326">읽어야 앎 (연휴를 말했나, 지어냈나)</text>
+    </g>
+  </g>
+</svg>

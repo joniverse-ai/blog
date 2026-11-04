@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" role="img" aria-label="공휴일 답 12개를 두 번씩 잰 평균. 원래 지시문 7.5개, 지시문에 연휴 규칙 한 줄을 더하면 9개지만 공휴일 없는 주에 금요일 연휴를 지어냈다. 지시문은 그대로 두고 도구가 연휴를 계산해 넣으면 12개 모두 맞았다">
+  <rect width="960" height="340" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">지시문 한 줄 vs 도구 코드 — 공휴일 답 12개</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">holiday-reply 데이터셋 · 답 모델 gpt-4o-mini · 버전마다 2번 돌린 사람 판정 평균</text>
+
+    <!-- 축: x0=300, 1개=48px, 12개=576 -->
+    <g stroke="#DDE0E6">
+      <path d="M300 92V300"/><path d="M444 92V300"/><path d="M588 92V300"/><path d="M732 92V300"/><path d="M876 92V300"/>
+    </g>
+    <g font-size="11" fill="#8A93A3" text-anchor="middle">
+      <text x="300" y="318">0</text><text x="444" y="318">3</text><text x="588" y="318">6</text><text x="732" y="318">9</text><text x="876" y="318">12</text>
+    </g>
+
+    <g font-size="14" fill="#14213D">
+      <text x="32" y="122" font-weight="700">v1 원래 지시문</text>
+      <text x="32" y="140" font-size="12" fill="#6A7280">연휴 항목 4개가 매번 실패</text>
+      <rect x="300" y="104" width="360" height="40" rx="6" fill="#8A93A3"/>
+      <text x="672" y="130" font-weight="700">7.5</text>
+
+      <text x="32" y="192" font-weight="700">v2 + 연휴 규칙 한 줄</text>
+      <text x="32" y="210" font-size="12" fill="#D9622B">공휴일 없는 주에 금요일 연휴를 지어냄</text>
+      <rect x="300" y="174" width="432" height="40" rx="6" fill="#E8875A"/>
+      <text x="744" y="200" font-weight="700">9</text>
+      <text x="768" y="200" font-size="12" fill="#D9622B">⚠ 새 실패 3번</text>
+
+      <text x="32" y="262" font-weight="700">v1 + 도구가 연휴 계산</text>
+      <text x="32" y="280" font-size="12" fill="#2F5BD3">지시문은 한 글자도 안 바꿈</text>
+      <rect x="300" y="244" width="576" height="40" rx="6" fill="#2F5BD3"/>
+      <text x="852" y="270" font-weight="700" fill="#FFFFFF" text-anchor="end">12</text>
+    </g>
+  </g>
+</svg>
