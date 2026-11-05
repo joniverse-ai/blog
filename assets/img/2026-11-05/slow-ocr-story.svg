@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" role="img" aria-label="OCR이 느리다는 증상을 따라간 과정. 서버 요청 기록에 사진 요청이 0건이라 원인은 엔진이 아니라 폰에서 사진이 출발하지 못한 것이었고, 폰 업로드 기능으로 고쳤다. 그 과정에서 tesseract가 0.5초로 빠르지만 날짜를 NS 208로 틀리게 읽는 것을 찾았고, Google Vision은 서버에서 0.3에서 0.6초에 11월 20일 오후 3시 치과를 정확히 읽었다">
+  <rect width="960" height="380" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">"OCR이 너무 느려" 를 따라가 보니</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">증상 → 근거 → 원인. 엔진을 바꾸기 전에 서버에 도착했는지부터</text>
+
+    <g font-size="13">
+      <rect x="32" y="92" width="280" height="118" rx="12" fill="#FFFFFF" stroke="#DDE0E6" stroke-width="2"/>
+      <text x="52" y="122" font-size="14" font-weight="700" fill="#D9622B">증상</text>
+      <text x="52" y="150" fill="#14213D">"사진 속 글자를 읽는 중…" 이</text>
+      <text x="52" y="172" fill="#14213D">끝나지 않음</text>
+
+      <rect x="340" y="92" width="280" height="118" rx="12" fill="#FFFFFF" stroke="#DDE0E6" stroke-width="2"/>
+      <text x="360" y="122" font-size="14" font-weight="700" fill="#2F5BD3">근거</text>
+      <text x="360" y="150" fill="#14213D">서버 요청 기록에 /api/ocr</text>
+      <text x="360" y="172" fill="#14213D" font-weight="700">0건</text>
+      <text x="360" y="194" fill="#6A7280">엔진은 사진을 받아 본 적도 없음</text>
+
+      <rect x="648" y="92" width="280" height="118" rx="12" fill="#14213D"/>
+      <text x="668" y="122" font-size="14" font-weight="700" fill="#F2A65A">진짜 원인</text>
+      <text x="668" y="150" fill="#FFFFFF">SDK 58의 fetch 가 사진 묶기에서 멈춤</text>
+      <text x="668" y="172" fill="#FFFFFF">→ 폰의 업로드 기능에 맡겨 해결</text>
+      <text x="668" y="194" fill="#C9CEDA">+ 60초 넘으면 오류 문구</text>
+    </g>
+    <g stroke="#8A93A3" stroke-width="2" fill="none">
+      <path d="M312 151H334"/><path d="M328 145l6 6-6 6"/>
+      <path d="M620 151H642"/><path d="M636 145l6 6-6 6"/>
+    </g>
+
+    <path d="M32 236H928" stroke="#DDE0E6" stroke-width="2"/>
+    <text x="32" y="266" font-size="15" font-weight="700" fill="#14213D">덤으로 찾은 것: 엔진은 빨랐지만 날짜를 틀렸다</text>
+    <text x="32" y="290" font-size="12" fill="#6A7280">같은 그림 "11월 20일 오후 3시 치과" (폰 사진 크기)</text>
+
+    <g font-size="14">
+      <text x="32" y="324" fill="#6A7280">tesseract</text>
+      <text x="160" y="324" fill="#6A7280">0.5초</text>
+      <text x="260" y="324" font-weight="700" fill="#D9622B">NS 208 오후 3시 치과  ✕</text>
+      <text x="32" y="354" fill="#14213D" font-weight="700">Google Vision</text>
+      <text x="160" y="354" fill="#14213D">0.3~0.6초</text>
+      <text x="260" y="354" font-weight="700" fill="#2F5BD3">11월 20일 오후 3시 치과  ✓</text>
+    </g>
+    <text x="928" y="354" font-size="12" fill="#6A7280" text-anchor="end">tesseract 는 노트북, Vision 은 서버에서 잰 시간</text>
+  </g>
+</svg>

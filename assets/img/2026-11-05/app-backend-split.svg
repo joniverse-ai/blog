@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" role="img" aria-label="사진으로 약속 만들기에서 앱과 백엔드가 나눈 일. 앱은 사진 받기, 권한 묻기, 사진 보내기, 사람이 고친 글 보내기, 메모 보여 주기를 한다. 백엔드는 Google Vision으로 글자 읽기, 약속 저장하기를 하고 비밀값을 가진다. 엔진을 바꿔도 앱은 다시 빌드하지 않는다">
+  <rect width="960" height="400" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">사진으로 약속 만들기: 누가 무엇을 하나</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">앱은 폰이 잘하는 일만, 읽고 판단하는 일은 백엔드가</text>
+
+    <rect x="32" y="92" width="420" height="276" rx="12" fill="#FFFFFF" stroke="#DDE0E6" stroke-width="2"/>
+    <text x="52" y="124" font-size="16" font-weight="700" fill="#2F5BD3">📱 앱 (Expo Go)</text>
+    <g font-size="14" fill="#14213D">
+      <text x="52" y="160">① 📷 카메라로 찍기 · 사진첩에서 고르기</text>
+      <text x="52" y="192">② 카메라 권한 묻기 (거부하면 설정 안내)</text>
+      <text x="52" y="224">③ 사진을 /api/ocr 로 보내기 (토큰만 붙임)</text>
+      <text x="52" y="256">⑤ 읽은 글을 입력창에 → 사람이 고치고 보내기</text>
+      <text x="52" y="288">⑦ 답 아래 ⏰ 약속 메모 보여 주기</text>
+    </g>
+    <text x="52" y="340" font-size="12" fill="#6A7280">아는 값: 백엔드 주소 하나 (EXPO_PUBLIC_API_URL)</text>
+
+    <rect x="508" y="92" width="420" height="276" rx="12" fill="#14213D"/>
+    <text x="528" y="124" font-size="16" font-weight="700" fill="#FFFFFF">🖥️ 백엔드 (Cloud Run)</text>
+    <g font-size="14" fill="#FFFFFF">
+      <text x="528" y="224">④ Google Vision 으로 사진 속 글자 읽기</text>
+      <text x="528" y="288">⑥ AI 친구가 일정을 약속으로 저장</text>
+    </g>
+    <g font-size="12" fill="#C9CEDA">
+      <text x="528" y="160">OpenAI 키 · Supabase 비밀 키 → Secret Manager</text>
+      <text x="528" y="182">Vision 인증 → 실행 계정의 임시 토큰 (키 파일 없음)</text>
+      <text x="528" y="248">로그에는 글자 수만, 읽은 내용은 남기지 않음</text>
+    </g>
+    <text x="528" y="340" font-size="12" font-weight="700" fill="#F2A65A">엔진을 바꿔도 앱은 다시 빌드하지 않음</text>
+
+    <g stroke="#D9622B" stroke-width="2" fill="none">
+      <path d="M452 220H500"/><path d="M492 214l8 6-8 6"/>
+      <path d="M508 252H460"/><path d="M468 246l-8 6 8 6"/>
+    </g>
+  </g>
+</svg>
