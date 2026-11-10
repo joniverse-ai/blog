@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="같은 코드가 폰에 들어가는 세 경로. Expo Go 개발 실행은 내 폰에서만, 노트북 개발 서버가 켜져 있어야 하고 저장하면 바로 바뀐다. EAS 빌드 preview는 클라우드가 APK를 만들어 링크를 받은 안드로이드 폰 누구나 설치하고 노트북 없이 돌지만 고치면 다시 빌드해야 한다. 스토어 배포는 개발자 계정과 테스트, 심사를 거쳐 모든 사용자에게 간다">
+  <rect width="960" height="360" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">같은 코드가 폰에 들어가는 세 경로</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">오른쪽으로 갈수록 받는 사람이 많아지고, 고친 걸 반영하는 데 손이 더 간다</text>
+
+    <g font-size="13">
+      <rect x="32" y="92" width="280" height="236" rx="12" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="52" y="124" font-size="16" font-weight="700" fill="#2F5BD3">① Expo Go</text>
+      <text x="52" y="146" fill="#6A7280">개발 실행</text>
+      <text x="52" y="184" fill="#14213D">받는 사람: <tspan font-weight="700">내 폰만</tspan></text>
+      <text x="52" y="210" fill="#14213D">노트북 개발 서버가 켜져 있어야 함</text>
+      <text x="52" y="236" fill="#14213D">저장하면 <tspan font-weight="700">바로</tspan> 바뀜</text>
+      <text x="52" y="300" font-size="12" fill="#6A7280">하루 앱 섹션 7~8에서 쓴 방법</text>
+
+      <rect x="340" y="92" width="280" height="236" rx="12" fill="#14213D"/>
+      <text x="360" y="124" font-size="16" font-weight="700" fill="#F2A65A">② EAS 빌드 (preview)</text>
+      <text x="360" y="146" fill="#C9CEDA">클라우드가 APK를 만들어 줌</text>
+      <text x="360" y="184" fill="#FFFFFF">받는 사람: <tspan font-weight="700">링크 받은 안드로이드</tspan></text>
+      <text x="360" y="210" fill="#FFFFFF"><tspan font-weight="700">노트북 없이</tspan> 돎</text>
+      <text x="360" y="236" fill="#FFFFFF">고치면 <tspan font-weight="700">다시 빌드</tspan>(약 20분)</text>
+      <text x="360" y="300" font-size="12" fill="#C9CEDA">오늘 "하루친구 조니"를 내 폰에 설치</text>
+
+      <rect x="648" y="92" width="280" height="236" rx="12" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="668" y="124" font-size="16" font-weight="700" fill="#2F5BD3">③ 스토어</text>
+      <text x="668" y="146" fill="#6A7280">EAS Submit / 콘솔 업로드</text>
+      <text x="668" y="184" fill="#14213D">받는 사람: <tspan font-weight="700">스토어 사용자 모두</tspan></text>
+      <text x="668" y="210" fill="#14213D">개발자 계정 · 테스트 단계 · 심사</text>
+      <text x="668" y="236" fill="#14213D">새 개인 계정은 테스터 12명 × 14일</text>
+      <text x="668" y="300" font-size="12" fill="#6A7280">오늘은 점검표까지만</text>
+    </g>
+  </g>
+</svg>
