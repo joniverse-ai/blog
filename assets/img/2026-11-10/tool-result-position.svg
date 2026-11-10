@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" role="img" aria-label="AI에게 보내는 메시지 순서. 고치기 전에는 도구 결과가 긴 지시문 가운데에 있고, 답 바로 앞에는 예전에 기억할 수 없어라고 말한 대화가 있어서 AI가 그 말을 따라 했다. 고친 뒤에는 도구 결과를 사용자 말 바로 뒤, 답 직전에 성공 실패 표시와 함께 두었다">
+  <rect width="960" height="430" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">바꾼 건 "어디에 두느냐" 하나</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">AI에게 보내는 메시지를 위에서 아래로 읽는다. 아래로 갈수록 답에 가깝다</text>
+
+    <text x="32" y="106" font-size="15" font-weight="700" fill="#D9622B">고치기 전</text>
+    <g font-size="12.5">
+      <rect x="32" y="118" width="420" height="104" rx="10" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="48" y="142" fill="#6A7280">지시문 — 규칙, 캐릭터, 지금 시각, 기억 …</text>
+      <rect x="48" y="154" width="388" height="30" rx="6" fill="#FDE9DD" stroke="#D9622B"/>
+      <text x="60" y="174" fill="#14213D">[도구 결과] 약속을 취소했습니다</text>
+      <text x="48" y="208" fill="#6A7280">… 지시문 계속</text>
+      <rect x="32" y="230" width="420" height="34" rx="8" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="48" y="252" fill="#14213D">앞 대화: "미안, 그건 기억할 수 없어" ×여러 번</text>
+      <rect x="32" y="272" width="420" height="34" rx="8" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="48" y="294" fill="#14213D">사용자: "약속 두 개 지워 줘"</text>
+      <rect x="32" y="314" width="420" height="40" rx="8" fill="#14213D"/>
+      <text x="48" y="339" fill="#FFFFFF" font-weight="700">AI: "약속을 지울 수는 없어!"  ✗ (실제론 지웠음)</text>
+    </g>
+
+    <text x="508" y="106" font-size="15" font-weight="700" fill="#2F5BD3">고친 뒤</text>
+    <g font-size="12.5">
+      <rect x="508" y="118" width="420" height="104" rx="10" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="524" y="142" fill="#6A7280">지시문 — 규칙, 캐릭터, 지금 시각, 기억 …</text>
+      <text x="524" y="176" fill="#6A7280">(도구 결과는 여기서 뺌)</text>
+      <rect x="508" y="230" width="420" height="34" rx="8" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="524" y="252" fill="#14213D">앞 대화: "미안, 그건 기억할 수 없어" ×여러 번</text>
+      <rect x="508" y="272" width="420" height="34" rx="8" fill="#FFFFFF" stroke="#DDE0E6"/>
+      <text x="524" y="294" fill="#14213D">사용자: "약속 두 개 지워 줘"</text>
+      <rect x="508" y="314" width="420" height="40" rx="8" fill="#E5ECFB" stroke="#2F5BD3"/>
+      <text x="524" y="339" fill="#14213D">[도구 결과] 성공: 약속을 취소했습니다 · 결과대로 말할 것</text>
+      <rect x="508" y="362" width="420" height="40" rx="8" fill="#14213D"/>
+      <text x="524" y="387" fill="#FFFFFF" font-weight="700">AI: "약속 두 개 지웠어!"  ✓</text>
+    </g>
+    <path d="M462 236 L498 236" stroke="#8A93A3" stroke-width="2"/><path d="M492 230 l6 6 -6 6" stroke="#8A93A3" stroke-width="2" fill="none"/>
+  </g>
+</svg>

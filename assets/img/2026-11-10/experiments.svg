@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" role="img" aria-label="한 번에 하나씩 바꾼 다섯 실험의 통과율. 문제 항목은 baseline 20퍼센트, v1 27, v2 87, v3 87, v4 100퍼센트. 정상 항목은 91, 91, 93, 94, 96퍼센트. 기준선은 문제 90퍼센트, 정상 95퍼센트이고 v4만 둘 다 넘었다. v2에서는 실패한 일을 했다고 말하는 문제가 새로 생겼다">
+  <rect width="960" height="400" rx="16" fill="#F5F6F2"/>
+  <g font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif">
+    <text x="32" y="44" font-size="20" font-weight="700" fill="#14213D">한 번에 하나씩 바꾸고, 기준은 먼저 정했다</text>
+    <text x="32" y="70" font-size="13" fill="#6A7280">실제 트레이스로 만든 데이터셋 23개 × 3회 · 기준: 문제 ≥ 90%, 정상 ≥ 95%</text>
+    <g font-size="12" fill="#6A7280">
+      <rect x="640" y="30" width="14" height="14" rx="3" fill="#D9622B"/><text x="660" y="42">문제 항목 (못 한다고 답하던 턴)</text>
+      <rect x="640" y="52" width="14" height="14" rx="3" fill="#2F5BD3"/><text x="660" y="64">정상 항목 (원래 잘 되던 턴)</text>
+    </g>
+    <!-- axis: y=320 is 0%, y=100 is 100% (220px) -->
+    <g stroke="#DDE0E6"><path d="M90 100H930"/><path d="M90 155H930"/><path d="M90 210H930"/><path d="M90 265H930"/><path d="M90 320H930"/></g>
+    <g font-size="11" fill="#8A93A3" text-anchor="end">
+      <text x="82" y="104">100%</text><text x="82" y="214">50%</text><text x="82" y="324">0</text>
+    </g>
+    <path d="M90 122H930" stroke="#D9622B" stroke-dasharray="5 4" stroke-width="1.5"/>
+    <path d="M90 111H930" stroke="#2F5BD3" stroke-dasharray="5 4" stroke-width="1.5"/>
+    <g font-size="12">
+      <!-- groups at x centers 170, 330, 490, 650, 810; bar width 44 -->
+      <!-- baseline: 20%, 90.7% -->
+      <rect x="124" y="276" width="44" height="44" fill="#D9622B"/><rect x="172" y="120.5" width="44" height="199.5" fill="#2F5BD3"/>
+      <!-- v1: 26.7, 90.7 -->
+      <rect x="284" y="261.3" width="44" height="58.7" fill="#D9622B"/><rect x="332" y="120.5" width="44" height="199.5" fill="#2F5BD3"/>
+      <!-- v2: 86.7, 92.6 -->
+      <rect x="444" y="129.3" width="44" height="190.7" fill="#D9622B"/><rect x="492" y="116.3" width="44" height="203.7" fill="#2F5BD3"/>
+      <!-- v3: 86.7, 94.4 -->
+      <rect x="604" y="129.3" width="44" height="190.7" fill="#D9622B"/><rect x="652" y="112.3" width="44" height="207.7" fill="#2F5BD3"/>
+      <!-- v4: 100, 96.3 -->
+      <rect x="764" y="100" width="44" height="220" fill="#D9622B"/><rect x="812" y="108.1" width="44" height="211.9" fill="#2F5BD3"/>
+      <g text-anchor="middle" font-weight="700" fill="#14213D">
+        <text x="146" y="270">20%</text><text x="306" y="255">27%</text><text x="466" y="123">87%</text><text x="626" y="123">87%</text><text x="786" y="95">100%</text>
+      </g>
+      <g text-anchor="middle" fill="#14213D">
+        <text x="170" y="344" font-weight="700">고치기 전</text><text x="330" y="344" font-weight="700">v1</text><text x="490" y="344" font-weight="700">v2</text><text x="650" y="344" font-weight="700">v3</text><text x="810" y="344" font-weight="700" fill="#2F5BD3">v4 ✓</text>
+        <text x="170" y="362" fill="#6A7280" font-size="11">—</text>
+        <text x="330" y="362" fill="#6A7280" font-size="11">규칙 문구 추가</text>
+        <text x="490" y="362" fill="#6A7280" font-size="11">+ 답 직전으로 이동</text>
+        <text x="650" y="362" fill="#6A7280" font-size="11">+ 성공·실패 표시</text>
+        <text x="810" y="362" fill="#6A7280" font-size="11">+ 실패 문구 강화</text>
+      </g>
+      <text x="490" y="384" text-anchor="middle" font-size="11" fill="#D9622B">⚠ v2: 실패한 일을 "했다"고 말하는 문제가 새로 생김 (정상 항목이 잡아냄)</text>
+    </g>
+  </g>
+</svg>
